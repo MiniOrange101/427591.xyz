@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线数学计算器</title>
+    <link rel="stylesheet" href="../easyui/icon.css">
+    <link rel="stylesheet" href="../easyui/easyui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../easyui/jquery.min.js"></script>
+    <script src="../easyui/jquery.easyui.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <div id="calculator">
+        <div id="display"></div>
+        <div>
+            <a href="#" class="easyui-linkbutton btn" onclick="reset()">清除</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="paren()">()</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="operate('^')">^</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="operate('+')">+</a>
+        </div>
+        <div>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('7')">7</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('8')">8</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('9')">9</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="operate('-')">-</a>
+        </div>
+        <div>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('4')">4</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('5')">5</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('6')">6</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="operate('*')">*</a>
+        </div>
+        <div>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('1')">1</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('2')">2</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('3')">3</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="operate('/')">/</a>
+        </div>
+        <div>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('.')">.</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="addNum('0')">0</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="backspace()">退格</a>
+            <a href="#" class="easyui-linkbutton btn" onclick="calculate()">=</a>
+        </div>
+        <button class="easyui-linkbutton" onclick="openDialog()">添加事件</button>
+        <ul id="events"></ul>
+    </div>
+    <div id="debugger"></div>
+    <div id="eventDialog" data-options="resizable:'true'" style="display:none;">
+        <label for="eventName">事件：</label>
+        <input type="text" id="eventName"><br>
+        <label for="eventCode">代码：</label>
+        <textarea id="eventCode"></textarea><br>
+    </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,85 @@
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+
+    16.666% {
+      color: orange;
+    }
+
+    33.333% {
+      color: yellow;
+    }
+
+    50% {
+      color: green;
+    }
+
+    66.666% {
+      color: blue;
+    }
+
+    83.333% {
+      color: indigo;
+    }
+
+    100% {
+      color: violet;
+    }
+  }
+
+  @keyframes flash {
+    0% {
+      color: red;
+      text-shadow: 0 0 10px blue;
+    }
+
+    50% {
+      color: yellow;
+      text-shadow: 0 0 20px orange;
+    }
+
+    100% {
+      color: green;
+      text-shadow: 0 0 30px lime;
+    }
+  }
+
+  .rainbow-text {
+    font-size: 48px;
+    animation: rainbow 7s linear infinite, spin 5s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .flashing-text {
+    font-size: 72px;
+    font-weight: bold;
+    animation: flash 1s infinite alternate;
+    color: red;
+    text-shadow: 0 0 10px blue;
+  }
+
+  .gradient-text {
+    font-size: 48px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    color: transparent;
+    animation: slide 5s linear infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      background-position: 0% 0%;
+    }
+
+    100% {
+      background-position: 100% 0%;
+    }
+  }
