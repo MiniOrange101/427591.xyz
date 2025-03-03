@@ -1,79 +1,13 @@
 <!DOCTYPE html>
-<html lang="en_US">
-
-<head>
+<html lang="">
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="easyui/icon.css">
-    <link rel="stylesheet" href="easyui/easyui.css">
-
-</head>
-
-<body class="easyui-layout" fit>
-    <div data-options="region:'north',split:true" style="height:6%;"></div>
-    <div data-options="region:'south',title:'South Title',split:true" style="height:20%;">
-        <div class="flashing-text">
-            <h3><strong>Astratine</strong></h3>
-        </div>
-    </div>
-    <div data-options="region:'west',title:'Features',split:true" style="width:20%;">
-        <a href='eastercalc/index.html'>
-            <div id="CalculatorPanel" class="easyui-panel"
-                title="<a href='eastercalc/index.html'>Online Math Solver</a>" style="width:100%;">
-                <p>View our online math solver with customize functions</p>
-            </div>
-        </a>
-        <a href='chat/index.html'>
-            <div id="MessageBoxPanel" class="easyui-panel" title="<a href='chat/index.html'>Online Chat Room</a>"
-                style="width:100%;">
-                <p>View our Online Chat room.You can talk with your friend by our tunnel on the internet.</p>
-            </div>
-        </a>
-    </div>
-    <div data-options="region:'center'" style="padding:5px;background:#eee;">
-        <div id="win" class="easyui-window" title="Some info" style="width:700px;height:400px;left:600px"
-            data-options="iconCls:'icon-help' ,inline:true">
-            Hello! <br>
-            Welcome to easyui! <br>
-            I am MiniOrange. <br>
-            This is My website. <br>
-            427591.xyz <br>
-            website. <br>
-            Thank you for visiting my website! <br>
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'"
-                onclick="$('#modal').window('open')">
-                Why this website looks so simple?</a>
-            <br>
-            <a href="./gift.html" class="easyui-linkbutton" data-options="iconCls:'icon-tip'">
-                Download a gift from MiniOrange</a>
-            <br>
-            <a href="eastercalc/index.html">
-                View our online math solver with customize functions</a>
-        </div>
-        <div id="modal" class="easyui-window" title="Why?" data-options="modal:true,closed:true,iconCls:'icon-help'"
-            style="width:550px;height:200px;padding:10px;">
-            Because the website owner is at school all day long, so I don't have any time to make this website. <br>
-            What you see is just a demo. <br>
-            I promise I will complete this website after 4 months. <br>
-            <a href="#" class="easyui-linkbutton" onclick="$('#modal').window('close')">OK</a>
-        </div>
-        <div id="supporter" class="easyui-window" title="Best Astratine" style="width:500px;height:500px;left:100px"
-            data-options="iconCls:'icon-man' ,inline:true">
-            My Best Friend Astratine's Page<br>
-            <h1><strong>Astratine</strong></h1>
-            <div class="rainbow-text">
-                <h1><strong>Astratine</strong></h1>
-            </div>
-        </div>
-    </div>
-
-    <div name="scripts">
-        <script src="easyui/jquery.min.js"></script>
-        <script src="easyui/jquery.easyui.min.js"></script>
-    </div>
-    <script src="app.js"></script>
-</body>
-
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
